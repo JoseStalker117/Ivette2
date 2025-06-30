@@ -13,8 +13,8 @@
         android:id="@+id/imageView3"
         android:layout_width="204dp"
         android:layout_height="0dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginBottom="78dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="22dp"
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,24 +25,25 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="41dp"
+        android:onClick="login"
         android:text="Iniciar sesión"
         app:layout_constraintBottom_toTopOf="@+id/register"
-        app:layout_constraintStart_toStartOf="@+id/register"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:onClick="login"/>
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="158dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="205dp"
+        android:onClick="register"
         android:text="Registrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        android:onClick="register"/>
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

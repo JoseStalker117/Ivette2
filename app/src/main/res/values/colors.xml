@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="button">#458E6B1D</color>
+
+    <color name="background_color">#FFFFFF</color>
+    <color name="primary_text">#1F2937</color>
+    <color name="secondary_text">#374151</color>
+    <color name="tertiary_text">#6B7280</color>
 </resources>
