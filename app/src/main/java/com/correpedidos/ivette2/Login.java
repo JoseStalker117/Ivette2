@@ -71,4 +71,14 @@ public class Login extends AppCompatActivity {
     public void Toast(String text){
         Toast.makeText(this,text,Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        getWindow().getDecorView().post(() -> {
+            if (!isFinishing()) {
+                finish();
+            }
+        });
+    }
 }

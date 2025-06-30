@@ -72,4 +72,14 @@ public class Register extends AppCompatActivity {
                     }
                 });
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        getWindow().getDecorView().post(() -> {
+            if (!isFinishing()) {
+                finish();
+            }
+        });
+    }
 }

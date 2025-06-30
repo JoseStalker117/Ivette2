@@ -38,4 +38,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Register.class);
         startActivity(intent);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        getWindow().getDecorView().post(() -> {
+            if (!isFinishing()) {
+                finish();
+            }
+        });
+    }
 }
